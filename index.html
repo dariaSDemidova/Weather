@@ -5,11 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="/styles/all/header.css">
 </head>
 
 <body>
+    <header>
+        <div class="header">
+            <div class="container-wrapper">
+                <div class="header-items">
+                    <div class="weather-block">
+                        <div class="location">
+                            <div class="auto-geolocation">
+                                <img class="geo-icon" alt="Определить геолокацию" title="Определить геолокацию"
+                                    src="/icons/geo-icon.png">
+                                <span class="city-name">Санкт-Петербург</span>
+                            </div>
+                            <form class="input-geolocation">
+                                <input class="city-input" placeholder="Введите город">
+                                <a href="#"><img class="search-icon" alt="Поиск" title="Найти"
+                                        src="/icons/search-icon.png"></a>
+                                </а>
 
+                        </div>
+                        <div class="weather-output">
+                            <img class="weather-icon" alt="Иконка погоды" src="/icons/rain-icon.png">
+                            <span class="temperature">
+                                0&#176;
+                            </span>
+                        </div>
+                    </div>
+                    <div class="autorization">
+                        <img class="autorization-icon" alt="Вход в личный кабинет" title="Войти в личный кабинет"
+                            src="/icons/autorization-icon.png">
+                        <span class="account">Личный кабинет</span>
+                    </div>
+                    <div class="header-cart">
+                        <a href="#"><img class="cart-icon" alt="Иконка корзины" title="Перейти в корзину"
+                                src="/icons/cart-icon.png"></a>
+                        <span class="products-quantity">5 тов. на 1500 р</span>
+                        <button class="header-btn">Оформить</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
 </body>
 
 </html>
