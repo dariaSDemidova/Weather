@@ -1,0 +1,29 @@
+$main-color: #000000;
+$footer-bg: #ECECEC;
+$orange: #FF7F56;
+$pink: #E7426A;
+$main-bg: #F7EBE5;
+$white: #ffffff;
+$gray: gray;
+
+@font-face {
+    font-family: Proxima Nova-Reg;
+    src: local("Proxima Nova"),
+        url(../fonts/proximanova_regular.ttf) format("ttf");
+    font-weight: 400;
+}
+
+& {
+    font-family: Proxima Nova-ExtraBold;
+    src: local("Proxima Nova"),
+        url(../fonts/proximanova_extrabold.otf) format("otf");
+    font-weight: 800;
+
+
+    & {
+        font-family: Proxima Nova-Bold;
+        src: local("Proxima Nova"),
+            url(../fonts/proximanova_bold.otf) format("otf");
+        font-weight: 600;
+    }
+}
