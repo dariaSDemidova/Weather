@@ -166,4 +166,31 @@ html {
 }
 .header-btn:hover {
   background-color: #FF7F56;
+}
+
+#section-nav__contacts {
+  color: #E7426A;
+}
+
+.nav-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav-link:hover {
+  color: #FF7F56;
+}
+
+.section-nav {
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 50px;
+}
+
+li {
+  display: inline;
+  margin-right: 80px;
 }/*# sourceMappingURL=header.css.map */
