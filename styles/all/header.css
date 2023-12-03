@@ -19,14 +19,14 @@
   font-weight: 800;
 }
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body,
 html {
   font-family: "Proxima Nova", sans-serif;
-  margin: 0;
-  padding: 0;
   height: 100%;
 }
 
@@ -60,6 +60,7 @@ html {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  width: 320px;
   margin-right: 45px;
 }
 
@@ -71,11 +72,15 @@ html {
 
 .geo-icon {
   display: block;
-  cursor: pointer;
 }
 
 .city-name {
-  font-size: 36px;
+  font-size: 34px;
+}
+
+.city-name--error {
+  font-size: 15px;
+  color: #E7426A;
 }
 
 .input-geolocation {

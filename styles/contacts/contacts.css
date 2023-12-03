@@ -1,37 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Proxima Nova";
-}
-
-.section-nav {
-  text-align: center;
-  padding-top: 22px;
-  padding-bottom: 50px;
-}
-
-li {
-  display: inline;
-  margin-right: 80px;
-}
-
-a {
-  color: #000;
-  text-decoration: none;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-#section-nav__contacts {
-  color: #E7426A;
-}
-
 .section-map {
   margin-bottom: 70px;
 }
