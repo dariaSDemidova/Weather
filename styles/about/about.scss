@@ -1,0 +1,87 @@
+/*@import "colors-fonts";*/
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.content-wrapper {
+  padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1440px;
+  color: #000;
+  /*color: $main-color;*/
+  text-align: center;
+}
+
+.about-us-img {
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+}
+
+.about-us-img img {
+  width: 100%;
+}
+
+.main-title {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /*font-family: "Montserrat";*/
+  font-family: "Proxima Nova";
+  font-size: 42px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.text-container {
+  padding-bottom: 40px;
+  /*font-family: 'Proxima Nova', sans-serif;*/
+  font-size: 20px;
+  line-height: 110%;
+  color: #292929;
+  text-align: center;
+}
+
+.text-container p:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.button-to-buy {
+  text-align: center;
+}
+
+.button-to-buy-link {
+  padding: 15px 80px;
+  display: inline-block;
+  background-color: #E7426A;
+  /*background-color: $pink;*/
+
+  color: #FFF;
+  /*color: $white;*/
+  /*font-family: 'Proxima Nova', sans-serif;*/
+  /*border: 1px solid $pink;*/
+  border: 1px solid #E7426A;
+  border-radius: 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  
+}
+
+.button-to-buy:hover {
+  background-color: rgba(231, 66, 106, .7);
+  border: 1px solid rgba(231, 66, 106, .7);
+}
