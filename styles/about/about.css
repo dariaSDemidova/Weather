@@ -5,7 +5,7 @@
 }
 
 .content-wrapper {
-  padding-bottom: 150px;
+  padding-bottom: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,7 +26,10 @@
 }
 
 .main-title {
-  font-family: "Montserrat";
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /*font-family: "Montserrat";*/
+  font-family: "Proxima Nova";
   font-size: 42px;
   font-weight: 600;
   line-height: normal;
@@ -38,6 +41,7 @@
 }
 
 .text-container {
+  padding-bottom: 40px;
   /*font-family: 'Proxima Nova', sans-serif;*/
   font-size: 20px;
   line-height: 110%;
@@ -45,12 +49,16 @@
   text-align: center;
 }
 
+.text-container p:not(:last-child) {
+  padding-bottom: 20px;
+}
+
 .button-to-buy {
   text-align: center;
 }
 
 .button-to-buy-link {
-  padding: 15px 50px;
+  padding: 15px 80px;
   display: inline-block;
   background-color: #E7426A;
   /*background-color: $pink;*/
@@ -59,7 +67,7 @@
   /*font-family: 'Proxima Nova', sans-serif;*/
   /*border: 1px solid $pink;*/
   border: 1px solid #E7426A;
-  border-radius: 30px;
+  border-radius: 3px;
   font-size: 20px;
   text-transform: uppercase;
   font-weight: 700;
