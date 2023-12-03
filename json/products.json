@@ -4,8 +4,8 @@
         "name": "Варежки",
         "price": "570",
         "img": "/image/products/varezhki.jpg",
-        "main-desc": "Самые комфортные вязаные варежки для женщин. Зимние краги, отлично дополнят любой Ваш образ, с шубой, с пуховиком, с пальто, красивый принт не оставит никого равнодушным, будет хорошим , приятным подарком.Варежки сохранят Ваши руки в тепле до -25 С. отдавайте предпочтение ручной стирке в холодной воде. При стирке в стиральной машине, выбирайте функцию деликатной стирки без отжима. Варежки теплые, зимние, шерстяные, вязаные, удобные, комфортные.",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Самые комфортные вязаные варежки для женщин. Зимние краги, отлично дополнят любой Ваш образ, с шубой, с пуховиком, с пальто, красивый принт не оставит никого равнодушным, будет хорошим , приятным подарком.Варежки сохранят Ваши руки в тепле до -25 С. отдавайте предпочтение ручной стирке в холодной воде. При стирке в стиральной машине, выбирайте функцию деликатной стирки без отжима. Варежки теплые, зимние, шерстяные, вязаные, удобные, комфортные.",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "frost"
     },
     {
@@ -13,8 +13,8 @@
         "name": "Ушанка",
         "price": "1990",
         "img": "/image/products/yshanka.jpg",
-        "main-desc": "Шапка ушанка стала несомненым трендом в этом сезоне. Такая шапка плюшевая отлично впишется в повседневный лук и согреет в холодную погоду. Наша шапка демисезонная имеет качественную навышивку логотипа Carhartt и подойдет для мужчин, для женщин, для подростков. Ушанка зимняя имеет замок, который можно регулировать и утеплитель для более прохладной погоды. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Шапка ушанка стала несомненым трендом в этом сезоне. Такая шапка плюшевая отлично впишется в повседневный лук и согреет в холодную погоду. Наша шапка демисезонная имеет качественную навышивку логотипа Carhartt и подойдет для мужчин, для женщин, для подростков. Ушанка зимняя имеет замок, который можно регулировать и утеплитель для более прохладной погоды. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "frost"
     },
     {
@@ -22,8 +22,8 @@
         "name": "Плед с подогревом",
         "price": "2100",
         "img": "/image/products/pled.jpg",
-        "main-desc": "Плед с подогревом – ваш идеальный спутник в холодные зимние ночи! Забудьте о холоде и дискомфорте, наслаждайтесь теплом и уютом, обернувшись в нежные объятия этого удивительного изделия. Наша простынь одеяло с подогревом – это инновационное решение для обеспечения комфортной температуры во время сна. Благодаря встроенному подогреву, вы сможете настроить оптимальную температуру и наслаждаться приятным теплом в любое время года. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Плед с подогревом – ваш идеальный спутник в холодные зимние ночи! Забудьте о холоде и дискомфорте, наслаждайтесь теплом и уютом, обернувшись в нежные объятия этого удивительного изделия. Наша простынь одеяло с подогревом – это инновационное решение для обеспечения комфортной температуры во время сна. Благодаря встроенному подогреву, вы сможете настроить оптимальную температуру и наслаждаться приятным теплом в любое время года. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "frost"
     },
     {
@@ -31,8 +31,8 @@
         "name": "Тёплые штаны",
         "price": "3350",
         "img": "/image/products/shtani.jpg",
-        "main-desc": "Утепленные штаны подходят для повседневного использования, для путешествий и даже как горнолыжный костюм для сноуборда. Брюки женские теплые настоящая находка для прогулок на свежем воздухе. Треники с утеплителем согреют вас в любую погоду, так как они непромокаемые, непродуваемые, водонепроницаемые. Подойдут для высоких, для невысоких, на большие размеры, для беременных. Эти модные оверсайз болоневые штанцы женские лучшая находка для пополнения зимнего гардероба и практичная вещь на осень. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Утепленные штаны подходят для повседневного использования, для путешествий и даже как горнолыжный костюм для сноуборда. Брюки женские теплые настоящая находка для прогулок на свежем воздухе. Треники с утеплителем согреют вас в любую погоду, так как они непромокаемые, непродуваемые, водонепроницаемые. Подойдут для высоких, для невысоких, на большие размеры, для беременных. Эти модные оверсайз болоневые штанцы женские лучшая находка для пополнения зимнего гардероба и практичная вещь на осень. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "frost"
     },
     {
@@ -40,8 +40,8 @@
         "name": "Перчатки",
         "price": "650",
         "img": "/image/products/perchatki.jpg",
-        "main-desc": "Тёплые перчатки одна из самых нужных вещей в зимнем гардеробе. Они обеспечивают надежную защиту от холода и мороза. Рукавицы утеплены мягкой меховой подкладкой, эластичные манжеты позволяют перчаткам хорошо сидеть на руках и при этом не давят, но отлично защищают от холодного воздуха и попадания снега, если вы решили поиграть в снежки. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Тёплые перчатки одна из самых нужных вещей в зимнем гардеробе. Они обеспечивают надежную защиту от холода и мороза. Рукавицы утеплены мягкой меховой подкладкой, эластичные манжеты позволяют перчаткам хорошо сидеть на руках и при этом не давят, но отлично защищают от холодного воздуха и попадания снега, если вы решили поиграть в снежки. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "cold"
     },
     {
@@ -49,8 +49,8 @@
         "name": "Кружка-термос",
         "price": "1180",
         "img": "/image/products/kruzhka.jpg",
-        "main-desc": "Стильная и яркая термокружка для для кофе и чая, подарит вам тепло и уют в дороге. Модную термокружку удобно брать с собой на учебу, работу и в любое увлекательное путешествие. Маленький термос поможет сохранить тепло вашего любимого напитка в течение дня. Кружка-термос подойдет для горячих и холодных напитков, а так же для воды. Туристическая бутылка - термос удобна для использования в коротких и длинных поездках, его можно использовать в автомобилях и поездах. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Стильная и яркая термокружка для для кофе и чая, подарит вам тепло и уют в дороге. Модную термокружку удобно брать с собой на учебу, работу и в любое увлекательное путешествие. Маленький термос поможет сохранить тепло вашего любимого напитка в течение дня. Кружка-термос подойдет для горячих и холодных напитков, а так же для воды. Туристическая бутылка - термос удобна для использования в коротких и длинных поездках, его можно использовать в автомобилях и поездах. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "cold"
     },
     {
@@ -58,8 +58,8 @@
         "name": "Вязаные носки",
         "price": "1250",
         "img": "/image/products/noski.jpg",
-        "main-desc": "Тёплые носки выполнены из шерстяной пряжи. Высокие носки представлены в оливковом цвете и украшены узорным орнаментом. Вязаные носочки идеальны для уютных зимних вечеров в компании пледа и какао. Пряжа из натуральной овечьей шерсти делает носки теплыми и идеальными для морозной зимы. Благодаря полиамиду и акрилу в составе они сохраняют форму и цвет даже после частых стирок и будут радовать вас не один сезон. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Тёплые носки выполнены из шерстяной пряжи. Высокие носки представлены в оливковом цвете и украшены узорным орнаментом. Вязаные носочки идеальны для уютных зимних вечеров в компании пледа и какао. Пряжа из натуральной овечьей шерсти делает носки теплыми и идеальными для морозной зимы. Благодаря полиамиду и акрилу в составе они сохраняют форму и цвет даже после частых стирок и будут радовать вас не один сезон. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "cold"
     },
     {
@@ -67,8 +67,8 @@
         "name": "Тёплый шарф",
         "price": "1730",
         "img": "/image/products/sharf.jpg",
-        "main-desc": "Однослойный шарф выполнен из шерсти с совмещением фактурной вязки и жаккардового узора. Мягкое и теплое полотно сохранит первоначальную форму даже после долгой носки. Гипоаллергенный материал подойдет людям с чувствительной кожей. Стирать изделие рекомендуем вручную или в стиральной машине в режиме ручной стирки универсальными моющими средствами, не содержащими отбеливателей, при температуре 40 С. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Однослойный шарф выполнен из шерсти с совмещением фактурной вязки и жаккардового узора. Мягкое и теплое полотно сохранит первоначальную форму даже после долгой носки. Гипоаллергенный материал подойдет людям с чувствительной кожей. Стирать изделие рекомендуем вручную или в стиральной машине в режиме ручной стирки универсальными моющими средствами, не содержащими отбеливателей, при температуре 40 С. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "cold"
     },
     {
@@ -76,8 +76,8 @@
         "name": "Куртка-ветровка",
         "price": "4700",
         "img": "/image/products/vetrovka.jpg",
-        "main-desc": "Стильная и модная демисезонная ветровка без капюшона - это идеальная верхняя одежда для весны и осени. Куртка весна-осень не спортивная выполнена из плотной непромокаемой и непродуваемой премиум ткани. Эта тонкая стеганная тактическая курточка спасет вас от дождя и ветра. Оснащена мягкой подкладкой. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Стильная и модная демисезонная ветровка без капюшона - это идеальная верхняя одежда для весны и осени. Куртка весна-осень не спортивная выполнена из плотной непромокаемой и непродуваемой премиум ткани. Эта тонкая стеганная тактическая курточка спасет вас от дождя и ветра. Оснащена мягкой подкладкой. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "spring"
     },
     {
@@ -85,8 +85,8 @@
         "name": "Кроссовки",
         "price": "3450",
         "img": "/image/products/krossovki.jpg",
-        "main-desc": "Демисезонные кроссовки для трейла, мембранная технология похожа на GORE-TEX, непромокаемые, бронированный носок позволит вам преодолевать любые препятствия. Технология Vibram Litebase, разработанная для значительного снижения веса подошвы. Эффект достигается за счет уменьшения толщины резинового слоя подошвы при сохранении компоновки и формы грунтозацепов.кроссовки подойдут для трекинга хайкинга и походов в прохладное время года.",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Демисезонные кроссовки для трейла, мембранная технология похожа на GORE-TEX, непромокаемые, бронированный носок позволит вам преодолевать любые препятствия. Технология Vibram Litebase, разработанная для значительного снижения веса подошвы. Эффект достигается за счет уменьшения толщины резинового слоя подошвы при сохранении компоновки и формы грунтозацепов.кроссовки подойдут для трекинга хайкинга и походов в прохладное время года.",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "spring"
     },
     {
@@ -94,8 +94,8 @@
         "name": "Жилет",
         "price": "1640",
         "img": "/image/products/zhilet.jpg",
-        "main-desc": "Стильная и модная жилетка - идеальный выбор для повседневного образа! Эта черная безрукавка станет незаменимой вещью в демисезонном гардеробе - осень и весна. Изготовленная из дутого стеганого материала, жилетка мужская также обеспечит комфорт и тепло в прохладные весенние и осенние дни. Короткая длина жилета делает его идеальным для молодежного образа. Большие карманы добавляют практичности и удобства. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Стильная и модная жилетка - идеальный выбор для повседневного образа! Эта черная безрукавка станет незаменимой вещью в демисезонном гардеробе - осень и весна. Изготовленная из дутого стеганого материала, жилетка мужская также обеспечит комфорт и тепло в прохладные весенние и осенние дни. Короткая длина жилета делает его идеальным для молодежного образа. Большие карманы добавляют практичности и удобства. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "spring"
     },
     {
@@ -103,8 +103,8 @@
         "name": "Лонгслив",
         "price": "1280",
         "img": "/image/products/longsleeve.jpeg",
-        "main-desc": "Лонгслив унисекс, выполнен из высококачественного хлопка (плотность 180г/м2). Ткань плотная, не просвечивает, при этом мягкая на ощупь, содержит в составе лайкру 8%, поэтому хорошо тянется и идеально сидит по фигуре. выдержит огромное количество стирок. Кофта оверсайз имеет довольно длинный рукав – можно носить его навыпуск или закатать. Лонгслив белый/черный с принтом. Принт выполнен качественно, не боится стирок, нанесен также на рукава изделия, что выгодно выделяет нашу футболку с надписью, футболку с принтом из множества подобных. Лонгслив женский, лонгслив мужской может быть одеждой для дома и одеждой для вечеринки, одеждой в школу, для мальчиков, для девочек, одеждой для танцев (хип-хоп) и для прогулок, подойдет для занятия спортом, йогой, бегом и уж точно станет незаменимой одеждой для путешествий. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Лонгслив унисекс, выполнен из высококачественного хлопка (плотность 180г/м2). Ткань плотная, не просвечивает, при этом мягкая на ощупь, содержит в составе лайкру 8%, поэтому хорошо тянется и идеально сидит по фигуре. выдержит огромное количество стирок. Кофта оверсайз имеет довольно длинный рукав – можно носить его навыпуск или закатать. Лонгслив белый/черный с принтом. Принт выполнен качественно, не боится стирок, нанесен также на рукава изделия, что выгодно выделяет нашу футболку с надписью, футболку с принтом из множества подобных. Лонгслив женский, лонгслив мужской может быть одеждой для дома и одеждой для вечеринки, одеждой в школу, для мальчиков, для девочек, одеждой для танцев (хип-хоп) и для прогулок, подойдет для занятия спортом, йогой, бегом и уж точно станет незаменимой одеждой для путешествий. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "spring"
     },
     {
@@ -112,8 +112,8 @@
         "name": "Бутылка для воды",
         "price": "730",
         "img": "/image/products/bottle.jpg",
-        "main-desc": "Бутылка для воды 500 мл. Выполненна из современного безопасного материала, который не выделяет и не впитывает запахи, обладает высокой прочностью. Стильная и функциональная, незаменима для тех, кто ведет активный образ жизни, подойдет для тренировок, как бутылка для школы, для туризма, хоккейная бутылка, для бега и не только. Надежный механизм открывания крышки с кнопки и дополнительный фиксатор дает 100% защиту от протекания. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Бутылка для воды 500 мл. Выполненна из современного безопасного материала, который не выделяет и не впитывает запахи, обладает высокой прочностью. Стильная и функциональная, незаменима для тех, кто ведет активный образ жизни, подойдет для тренировок, как бутылка для школы, для туризма, хоккейная бутылка, для бега и не только. Надежный механизм открывания крышки с кнопки и дополнительный фиксатор дает 100% защиту от протекания. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "warm"
     },
     {
@@ -121,8 +121,8 @@
         "name": "Крем SPF",
         "price": "990",
         "img": "/image/products/spf.jpg",
-        "main-desc": "Чувствительная кожа лица нуждается в особой заботе и защите от солнечных лучей. Деликатный крем Sensitive Care Cream с экстрактом овса и натуральными маслами миндаля и масло ши (карите) в составе смягчает и успокаивает кожу, помогает в устранении зуда и покраснений, восстанавливает липидный барьер. Комплекс бетаина, аллантоина и витамина Е увлажняет, устраняет чувство стянутости и шелушение, возвращает коже ощущение длительного комфорта. Крем не содержит отдушку.",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Чувствительная кожа лица нуждается в особой заботе и защите от солнечных лучей. Деликатный крем Sensitive Care Cream с экстрактом овса и натуральными маслами миндаля и масло ши (карите) в составе смягчает и успокаивает кожу, помогает в устранении зуда и покраснений, восстанавливает липидный барьер. Комплекс бетаина, аллантоина и витамина Е увлажняет, устраняет чувство стянутости и шелушение, возвращает коже ощущение длительного комфорта. Крем не содержит отдушку.",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "warm"
     },
     {
@@ -130,8 +130,8 @@
         "name": "Бейсболка",
         "price": "395",
         "img": "/image/products/kepka.jpg",
-        "main-desc": "Бейсболка послужит идеальным дополнением к Вашему стильному образу. Кепка мужская летняя выполнена из 100% хлопка в строгом черном цвете и будет отлично смотреться, как в сочетании со спортивными вещами, так и с повседневной одеждой. Классическая бейсболка мужская регулируется по размеру с помощью застежки, поэтому данный аксессуар прекрасно подойдет, как мужчинам, так и женщинам. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Бейсболка послужит идеальным дополнением к Вашему стильному образу. Кепка мужская летняя выполнена из 100% хлопка в строгом черном цвете и будет отлично смотреться, как в сочетании со спортивными вещами, так и с повседневной одеждой. Классическая бейсболка мужская регулируется по размеру с помощью застежки, поэтому данный аксессуар прекрасно подойдет, как мужчинам, так и женщинам. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "warm"
     },
     {
@@ -139,8 +139,8 @@
         "name": "Базовая футболка",
         "price": "1225",
         "img": "/image/products/shirt.jpg",
-        "main-desc": "Унисекс футболка с короткими рукавами и свободным покроем идеально сочетается с различными стилями: от спортивного до делового. Такая хлопковая майка с округлым вырезом горловины красиво смотрится с джинсами, брюками и юбкой, ее можно надеть под кардиган или пиджак. Изготовлена из мягкой и эластичной ткани, она гарантирует максимальный комфорт в любое время года. ",
-        "details-desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "main": "Унисекс футболка с короткими рукавами и свободным покроем идеально сочетается с различными стилями: от спортивного до делового. Такая хлопковая майка с округлым вырезом горловины красиво смотрится с джинсами, брюками и юбкой, ее можно надеть под кардиган или пиджак. Изготовлена из мягкой и эластичной ткани, она гарантирует максимальный комфорт в любое время года. ",
+        "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tag": "warm"
     }
 ]
