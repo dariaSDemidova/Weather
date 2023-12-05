@@ -25,10 +25,11 @@
               <div class="auto-geolocation">
                 <img class="geo-icon" alt="Определить геолокацию" title="Определить геолокацию"
                   src="icons/geo-icon.png">
-                <span class="city-name">Санкт-Петербург</span>
+                <span class="city-name"></span>
+                <span class="city-name--error"></span>
               </div>
               <form class="input-geolocation">
-                <input class="city-input" placeholder="Введите город">
+                <input class="city-input" id="inputcity" placeholder="Введите город">
                 <a href="#"><img class="search-icon" alt="Поиск" title="Найти" src="icons/search-icon.png"></a>
               </form>
 
@@ -36,7 +37,6 @@
             <div class="weather-output">
               <img class="weather-icon" alt="Иконка погоды" src="icons/rain-icon.png">
               <span class="temperature">
-                0&#176;
               </span>
             </div>
           </div>
@@ -52,21 +52,23 @@
             <button class="header-btn">Оформить</button>
           </div>
         </div>
-        <!-- навигация -->
-        <nav>
-          <ul class="section-nav">
-            <li><a class="nav-link" id="section-nav__contacts" href="index.html">ГЛАВНАЯ</a></li>
-            <li><a class="nav-link" href="about.html">О НАС</a></li>
-            <li><a class="nav-link" href="#">ОПЛАТА</a></li>
-            <li><a class="nav-link" href="#">ДОСТАВКА</a></li>
-            <li><a class="nav-link" href="contacts.html">КОНТАКТЫ</a></li>
-          </ul>
-        </nav>
+
       </div>
     </div>
   </header>
 
-
+  <!-- навигация -->
+  <div class="container-wrapper">
+    <nav>
+      <ul class="section-nav">
+        <li><a class="nav-link" href="index.html">ГЛАВНАЯ</a></li>
+        <li><a class="nav-link" id="section-nav__contacts" href="about.html">О НАС</a></li>
+        <li><a class="nav-link" href="#">ОПЛАТА</a></li>
+        <li><a class="nav-link" href="#">ДОСТАВКА</a></li>
+        <li><a class="nav-link" href="contacts.html">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <main>
     <div class="main">
@@ -147,7 +149,7 @@
     </div>
 
   </footer>
-  <script src="js/"></script>
+  <script src="js/main/header.js"></script>
 </body>
 
 </html>
