@@ -1,12 +1,4 @@
-/*@import "colors-fonts";*/
-/*@import "../all/.css/colors.css";*/
-* {
-  padding: 0;
-  margin: 0;
-}
-
 .main {
-  padding-top: 50px;
   padding-bottom: 80px;
 }
 
@@ -31,8 +23,6 @@
 .main-title {
   padding-top: 15px;
   padding-bottom: 15px;
-  /*font-family: "Montserrat";*/
-  font-family: "Proxima Nova";
   font-size: 42px;
   font-weight: 600;
   line-height: normal;
@@ -45,7 +35,6 @@
 
 .text-container {
   padding-bottom: 40px;
-  /*font-family: 'Proxima Nova', sans-serif;*/
   font-size: 20px;
   line-height: 110%;
   color: #292929;
@@ -108,7 +97,8 @@
   font-size: 18px;
 }
 
-.footer-phone-number a, .footer-nav-links a {
+.footer-phone-number a,
+.footer-nav-links a {
   color: #292929;
   text-decoration: none;
 }
