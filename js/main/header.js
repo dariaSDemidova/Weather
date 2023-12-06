@@ -259,7 +259,7 @@ function getDatafromLocSt() {
             if (tempValue < -15) {
                 console.log('frost');
                 return 'frost';
-            } else if (tempValue > -15 && tempValue <= 0) {
+            } else if (tempValue >= -15 && tempValue <= 0) {
                 console.log('cold');
                 return 'cold';
             } else if (tempValue > 0 && tempValue <= 15) {
