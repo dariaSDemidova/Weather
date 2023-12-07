@@ -4,6 +4,13 @@ const city = document.querySelector('.city-name');
 const cityErr = document.querySelector('.city-name--error');
 // Место для вывода температуры
 const temp = document.querySelector('.temperature');
+// Место для иконки погоды
+const weatherIcon = document.querySelector('.weather-icon');
+// Поле ввода города
+let inputField = document.getElementById('inputcity');
+// Кнопка для ввода названия города 
+const searchBtn = document.querySelector('.search-icon');
+
 let objAutoLocation;
 // Штуки для создания карточек
 const cardContainer = document.getElementById("formList");
@@ -205,25 +212,27 @@ function findLocation() {
         arr.push(longitude, latitude);
 
         // Передаём широту и долготу
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=ru&appid=d99974b292ae5da6e80eca1d5534bc4b`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=ru&appid=35ef705f13389766e1067cae35276354`)
             .then(function (resp) { return resp.json() })
             .then(function (data) {
+
+                console.log(data);
                 //получаем название местности
                 let cityAutoLocation = data.name;
                 //получаем температуру
                 let tempAutoLocation = Math.floor(data.main.temp - 273.15);
+                //получаем иконку погоды
+                let iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`
                 //создаём пустой массив
                 let objAutoLocation = [];
                 // Пушим в массив данные и сохраняем массив в Session Storage
-                objAutoLocation.push(cityAutoLocation, tempAutoLocation);
+                objAutoLocation.push(cityAutoLocation, tempAutoLocation, iconUrl);
                 const objAutoLocationJSON = JSON.stringify(objAutoLocation);
                 window.sessionStorage.setItem("cityAndTemp", objAutoLocationJSON);
                 getDatafromLocSt();
 
             })
-            .catch(function () {
-                console.log(`Возникла ошибка: ${error.name} + ${error.message}`)//Обрабатываем ошибки
-            });
+            .catch(error => alert(error.message));
     }
 
     function error() { // если всё плохо пишем об этом
@@ -239,7 +248,8 @@ function getDatafromLocSt() {
     if (objAutoLocationString) { // если массив существует
         const arrayAutoLocation = JSON.parse(objAutoLocationString);
         city.textContent = `${arrayAutoLocation[0]}`;
-        temp.textContent = `${arrayAutoLocation[1]}°`
+        temp.textContent = `${arrayAutoLocation[1]}°`;
+        weatherIcon.src = `${arrayAutoLocation[2]}`;
         console.log(`${arrayAutoLocation[0]}, ${arrayAutoLocation[1]}`)
     } else {
         console.log('Массив arrayAutoLocation не найден в Session Storage.');
@@ -253,6 +263,8 @@ function getDatafromLocSt() {
         cardOne.textContent = ''; // очищаем карточки
 
         let tempValue = `${parseInt(arrayAutoLocation[1])}`; // получаем из массива температуру как число
+
+        // console.log(`${parseInt(arrayAutoLocation[1])}`);
 
         // проверяем температуру и получаем соответствующий тэг
         function checkTemp() {
@@ -273,6 +285,8 @@ function getDatafromLocSt() {
                 return 'Некорректная температура';
             }
         }
+        // console.log(checkTemp());
+
         // функция постройки карточек
         function buildCards() {
             let tagValue = checkTemp(); //возвращаем тэг из функции
@@ -298,15 +312,23 @@ function getDatafromLocSt() {
 }
 
 
+//приводим город к нужному формату
+function formatCity(name) {
+    let nameLowerCase = name.toLowerCase();
+    let newName = nameLowerCase[0].toUpperCase() + nameLowerCase.slice(1);
+    return newName.replace(/ +/g, '').replace(/-[a-zа-яё]/g, $0 => $0.toUpperCase()).trim();
+}
+
+
+
 
 // Город из инпута и температура по нему 
 function getGeoFromInput(e) {
     e.preventDefault();
     // Получаю значения из инпута 
-    let inputField = document.getElementById('inputcity');
-    let inputCityValue = inputField.value.trim();
+    let inputCityValue = formatCity(inputField.value);
     // Это ключ из API
-    const apiKey = "d99974b292ae5da6e80eca1d5534bc4b";
+    const apiKey = "35ef705f13389766e1067cae35276354";
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputCityValue}&lang=ru&appid=${apiKey}`,
         {
@@ -317,8 +339,10 @@ function getGeoFromInput(e) {
         })
         .then((data) => {
             let getNewTemp = Math.floor(data.main.temp - 273.15);
+            //получаем иконку погоды
+            let iconUrl = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`
 
-            const objLocationStr = [inputCityValue, getNewTemp];
+            const objLocationStr = [inputCityValue, getNewTemp, iconUrl];
             const arrayGetLocationJSON = JSON.stringify(objLocationStr);
             window.sessionStorage.setItem("cityAndTemp", arrayGetLocationJSON);
 
@@ -331,9 +355,25 @@ function getGeoFromInput(e) {
             console.log(`Возникла ошибка: ${error.name} + ${error.message}`)//Обрабатываем ошибки
         });
 }
-// Клик по кнопке для выполнения функции 
-document.querySelector('.search-icon').addEventListener('click', getGeoFromInput);
 
+//Кнопка ввода города
+searchBtn.addEventListener('click', getGeoFromInput);
+
+// inputField.addEventListener('keypress', function (e) {
+//     let key = e.key;
+//     if (key === 13) { // код клавиши Enter
+//         searchBtn.click();
+//     }
+// });
+
+
+//Enter — тоже кнопка ввода города
+document.addEventListener('keydown', event => {
+    if (event.code === 'Enter') {
+        event.preventDefault();
+        searchBtn.click();
+    };
+});
 
 
 
