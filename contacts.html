@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/all/header.css">
     <link rel="stylesheet" type="text/css" href="styles/all/footer.css">
     <link rel="stylesheet" href="styles/contacts/contacts.css">
+    <link rel="stylesheet" href="styles/modal/modal.css">
     <link rel="stylesheet icon" type="image/png" href="icons/favicon.png">
     <title>Контакты</title>
 </head>
@@ -31,7 +32,7 @@
                                 <input class="city-input" id="inputcity" placeholder="Введите город">
                                 <a href="#"><img class="search-icon" alt="Поиск" title="Найти"
                                         src="icons/search-icon.png"></a>
-                                </а>
+                            </form>
 
                         </div>
                         <div class="weather-output">
@@ -43,7 +44,7 @@
                     <div class="autorization">
                         <img class="autorization-icon" alt="Вход в личный кабинет" title="Войти в личный кабинет"
                             src="icons/autorization-icon.png">
-                        <span class="account">Личный кабинет</span>
+                        <button class="account">Личный кабинет</button>
                     </div>
                     <div class="header-cart">
                         <a href="#"><img class="cart-icon" alt="Иконка корзины" title="Перейти в корзину"
@@ -53,7 +54,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </header>
 
@@ -91,6 +91,7 @@
 
     </div>
 
+    <!-- футер -->
     <footer class="footer">
 
         <div class="footer-container">
@@ -131,15 +132,93 @@
 
                     <p class="footer-copyright">© 2023 Мари, Кристина, Маша, Вероника, Даша, Анна, Лиза</p>
                 </div>
-
-
             </div>
-
         </div>
-
     </footer>
 
+
+
+    <!-- Модальные окна -->
+    <!-- Авторизация -->
+    <div class="login-modal">
+        <div class="login-modal__content">
+            <button type="button" class="login-modal__close"><strong>&times;</strong></button>
+            <div class="login-modal__form">
+                <form class="login-form" action="#">
+                    <h2 class="login-form__title">Вход в личный кабинет</h2>
+                    <div class="login-form__inputs">
+                        <label for="user_login">Введите свой e-mail</label>
+                        <input class="login-form__input" id="user_login" name="user_login" required type="email"
+                            placeholder="test@mail.com">
+                        <label for="user_password">Введите пароль</label>
+                        <input class="login-form__input" name="user_password" required type="text"
+                            placeholder="**********">
+                        <div><input class="login-form__checkbox" type="checkbox"> Запомнить меня</div>
+                    </div>
+                    <button class="login-modal__button" name="submit" type="submit">Войти!</button>
+                    <button class="login-modal__register">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Регистрация -->
+    <div class="register-modal">
+        <div class="register-modal__content">
+            <button type="button" class="register-modal__close"><strong>&times;</strong></button>
+            <div class="register-modal__form">
+                <form class="register-form" id="register-form" novalidate>
+                    <h2 class="register-form__enter">Зарегистрироваться</h2>
+
+                    <div class="register-form__inputs">
+                        <label for="user_name">Ваше имя*</label>
+                        <input class="register-form__input" id="user_name" name="user_name" type="text"
+                            placeholder="Введите имя" required minlength="2" maxlength="20"
+                            pattern="^[A-Za-zА-Яа-яЁё\s]*$">
+                        <span class="error-message"></span>
+                        <br>
+
+                        <label for="user_phone">Номер телефона*</label>
+                        <input class="register-form__input" id="user_phone" name="user_phone" required type="number"
+                            placeholder="+7 (___) ___-__-__">
+                        <span class="error-message"></span>
+                        <br>
+
+                        <label for="user_mail">E-mail*</label>
+                        <input class="register-form__input" id="user_mail" name="user_mail" required type="text"
+                            placeholder="test@mail.com" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$">
+                        <span class="error-message"></span>
+                        <br>
+
+                        <label for="user_password">Придумайте пароль*</label>
+                        <input class="register-form__input" id="user_password" name="user_password" type="text"
+                            placeholder="**********" required minlength="8"
+                            pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).+$">
+                        <span class="error-message"></span>
+                        <br>
+
+                        <label for="user_confirm-password">Повторите пароль*</label>
+                        <input class="register-form__input" id="user_confirm-password" name="user_confirm-password"
+                            type="text" placeholder="**********" required minlength="8"
+                            pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).+$">
+                        <span class="error-message"></span>
+                        <br>
+
+                        <input class="register-form__agreement" id="user_agreement" name="user_agreement"
+                            type="checkbox" required>
+                        <label for="user_agreement">Согласие на обработку данных</label>
+                        <span class="error-message"></span>
+                        <br>
+                    </div>
+                    <button class="register-modal__button" name="submit" type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <script src="js/main/header.js"></script>
+    <script src="js/main/modal.js"></script>
 </body>
 
 </html>
