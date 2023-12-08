@@ -10,7 +10,7 @@ const registerSubmitButton = document.querySelector('.register-modal__button');
 
 const userName = document.getElementById("user_name");
 const userMail = document.getElementById("user_mail");
-const userPassword = document.getElementById("user_password");
+const userPassword = document.getElementById("user_password_reg");
 
 const userLoginMail = document.getElementById("user_login");
 const userLoginPass = document.querySelector(".login-form__input");
