@@ -1,4 +1,93 @@
+// Получение элементов DOM
+const enterButton = document.querySelector('.account');
+const registerButton = document.querySelector('.login-modal__register');
+const loginModal = document.querySelector('.login-modal');
+const registerModal = document.querySelector('.register-modal');
+const loginModalClose = document.querySelector('.login-modal .login-modal__close');
+const registerModalClose = document.querySelector('.register-modal .register-modal__close');
+const loginButton = document.querySelector('.login-modal__button');
+const registerSubmitButton = document.querySelector('.register-modal__button');
+
+const userName = document.getElementById("user_name");
+const userMail = document.getElementById("user_mail");
+const userPassword = document.getElementById("user_password");
+
+const userLoginMail = document.getElementById("user_login");
+const userLoginPass = document.querySelector(".login-form__input");
+
+const accountName = document.querySelector(".account-name");
+
+
+
 const modals = () => {
+
+    // Проверка, есть ли что-то в LocalStorage по нашему ключу
+    function checkLStorage() {
+        const objUserString = localStorage.getItem('userData');
+        if (objUserString) { // если массив существует
+            // const userInfo = JSON.parse(objUserString);
+            return JSON.parse(objUserString);
+        } else {
+            console.log("Массива не существует"); // если массива не существует
+        }
+    }
+
+    checkLStorage();
+
+
+    // Функция авторизации
+    function autorizationUser() {
+
+        let userArr = checkLStorage(); // возвращаем данные из LocalStorage, если они есть
+        if (userArr) {
+            let userLoginMailValue = userLoginMail.value; //получаем инпут почты
+            let userLoginPassValue = userLoginPass.value; //получаем инпут пароль
+            console.log(userArr[0], userArr[1]);
+            console.log(userLoginMailValue, userLoginPassValue);
+
+
+            if (userLoginMailValue == userArr[0] && userLoginPassValue == userArr[1]) {
+                alert("Вы успешно авторизовались!"); //если совпадает с элементами в массиве
+                accountName.textContent = userArr[2];  //вставляем имя за модалкой
+            } else {
+                alert("Данные неверны!");
+
+                document.querySelector(".loginErr").textContent = "Данные неверны!"; //если не совпадает с элементами в массиве
+            }
+        } else {
+            alert("Вы не зарегистрированы");
+            loginButton.disabled = true;
+            document.querySelector(".loginErr").textContent = "Данные неверны!"; //если не совпадает с элементами в массиве
+        }
+    }
+    // Кнопка "Войти!"
+    loginButton.addEventListener('click', autorizationUser);
+
+
+
+
+
+    // Функция регистрации
+    function regUser() {
+
+        let userNameValue = userName.value;
+        let userMailValue = userMail.value;
+        let userPasswordValue = userPassword.value;
+        let userArr = []; // пустой массив
+        // Пушим в массив данные и сохраняем массив в LocalStorage по ключу
+        userArr.push(userMailValue, userPasswordValue, userNameValue);
+        const objUserArrJSON = JSON.stringify(userArr);
+        window.localStorage.setItem("userData", objUserArrJSON);
+        alert("Регистрация прошла успешно!");
+    }
+
+    // Кнопка "Зарегистрироваться"
+    registerSubmitButton.addEventListener('click', regUser);
+
+
+
+
+
     function bindModal(trigger, modal, close) {
         // Добавление слушателя для открытия модального окна
         trigger.addEventListener('click', (e) => {
@@ -21,20 +110,10 @@ const modals = () => {
         });
     }
 
-    // Получение элементов DOM
-    const enterButton = document.querySelector('.account');
-    const registerButton = document.querySelector('.login-modal__register');
-    const loginModal = document.querySelector('.login-modal');
-    const registerModal = document.querySelector('.register-modal');
-    const loginModalClose = document.querySelector('.login-modal .login-modal__close');
-    const registerModalClose = document.querySelector('.register-modal .register-modal__close');
-    const loginButton = document.querySelector('.login-modal__button');
-    const registerSubmitButton = document.querySelector('.register-modal__button');
 
     // Привязка модального окна к кнопке "Вход"
     bindModal(enterButton, loginModal, loginModalClose);
     bindModal(registerButton, registerModal, registerModalClose);
-
 
 
 
@@ -106,41 +185,9 @@ const modals = () => {
             registrationForm.reset();
         }
     });
-
-
-
-    // // Добавление обработчика для кнопки "Войти"
-    // loginButton.addEventListener('click', () => {
-    //     loginModal.style.display = "none";
-    //     document.body.style.overflow = "";
-    // });
-
-    // // Добавление обработчика для кнопки "Зарегистрироваться"
-    // registerSubmitButton.addEventListener('click', () => {
-    //     registerModal.style.display = "none";
-    //     document.body.style.overflow = "";
-    // });
 };
 
 // Вызов функции для привязки модального окна
 modals();
 
-
-
-
-
-// let isLoggedIn = false; // Изначально пользователь не вошел
-
-// // Функция для обновления текста на кнопке входа
-// function updateLoginButtonText() {
-//     const loginButton = document.querySelector('.account');
-//     if (isLoggedIn) {
-//         loginButton.textContent = "Имя пользователя";
-//     } else {
-//         loginButton.textContent = "Личный кабинет";
-//     }
-// }
-
-// // Вызов функции для установки начального текста
-// updateLoginButtonText();
 
