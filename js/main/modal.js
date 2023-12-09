@@ -21,11 +21,30 @@ const accountName = document.querySelector(".account-name");
 
 const modals = () => {
 
+    // Функция регистрации
+    function regUser() {
+
+        let userNameValue = userName.value;
+        let userMailValue = userMail.value;
+        let userPasswordValue = userPassword.value;
+        let userArr = []; // пустой массив
+        // Пушим в массив данные и сохраняем массив в LocalStorage по ключу
+        userArr.push(userMailValue, userPasswordValue, userNameValue);
+        const objUserArrJSON = JSON.stringify(userArr);
+        window.localStorage.setItem("userData", objUserArrJSON);
+        alert("Регистрация прошла успешно!");
+    }
+
+    // Кнопка "Зарегистрироваться"
+    registerSubmitButton.addEventListener('click', regUser);
+
     // Проверка, есть ли что-то в LocalStorage по нашему ключу
     function checkLStorage() {
         const objUserString = localStorage.getItem('userData');
         if (objUserString) { // если массив существует
-            // const userInfo = JSON.parse(objUserString);
+            const userInfo = JSON.parse(objUserString);
+            accountName.textContent = userInfo[2];
+            return userInfo;
             return JSON.parse(objUserString);
         } else {
             console.log("Массива не существует"); // если массива не существует
@@ -66,22 +85,7 @@ const modals = () => {
 
 
 
-    // Функция регистрации
-    function regUser() {
 
-        let userNameValue = userName.value;
-        let userMailValue = userMail.value;
-        let userPasswordValue = userPassword.value;
-        let userArr = []; // пустой массив
-        // Пушим в массив данные и сохраняем массив в LocalStorage по ключу
-        userArr.push(userMailValue, userPasswordValue, userNameValue);
-        const objUserArrJSON = JSON.stringify(userArr);
-        window.localStorage.setItem("userData", objUserArrJSON);
-        alert("Регистрация прошла успешно!");
-    }
-
-    // Кнопка "Зарегистрироваться"
-    registerSubmitButton.addEventListener('click', regUser);
 
 
 
