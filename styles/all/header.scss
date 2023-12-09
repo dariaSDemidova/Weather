@@ -134,11 +134,14 @@ html {
     cursor: pointer;
 }
 
-.account {
+.account,
+.account-name {
     text-transform: uppercase;
     font-size: 20px;
     cursor: pointer;
 }
+
+
 
 .header-cart {
     display: flex;
