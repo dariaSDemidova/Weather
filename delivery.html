@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доставка</title>
+  <link rel="stylesheet icon" type="image/png" href="icons/favicon.png">
+  <link rel="stylesheet" type="text/css" href="./styles/all/header.css">
+  <link rel="stylesheet" href="./styles/all/normalize.css">
+  <link rel="stylesheet" href="./styles/container-wrapper/container-wrapper.css">
+  <link rel="stylesheet" type="text/css" href="./styles/all/footer.css">
+  <link rel="stylesheet" href="./styles/all/colors.css">
+  <link rel="stylesheet" href="./styles/all/">
+  <link rel="stylesheet" href="./styles/delivery/delivery.css">
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="container-wrapper">
+        <div class="header-items">
+          <div class="weather-block">
+            <div class="location">
+              <div class="auto-geolocation">
+                <img class="geo-icon" alt="Определить геолокацию" title="Определить геолокацию"
+                  src="icons/geo-icon.png">
+                <span class="city-name"></span>
+                <span class="city-name--error"></span>
+              </div>
+              <form class="input-geolocation">
+                <input class="city-input" id="inputcity" placeholder="Введите город">
+                <a href="#"><img class="search-icon" alt="Поиск" title="Найти" src="icons/search-icon.png"></a>
+              </form>
+            </div>
+            <div class="weather-output">
+              <img class="weather-icon" alt="Иконка погоды" src="icons/weather-icon.png">
+              <span class="temperature">
+              </span>
+            </div>
+          </div>
+          <div class="autorization">
+            <img class="autorization-icon" alt="Вход в личный кабинет" title="Войти в личный кабинет"
+              src="icons/autorization-icon.png">
+            <span class="account">Личный кабинет</span>
+          </div>
+          <div class="header-cart">
+            <a href="#"><img class="cart-icon" alt="Иконка корзины" title="Перейти в корзину"
+                src="icons/cart-icon.png"></a>
+            <span class="products-quantity">5 тов. на 1500 р</span>
+            <button class="header-btn">Оформить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-wrapper">
+    <nav>
+      <ul class="section-nav">
+        <li><a class="nav-link" href="./index.html">ГЛАВНАЯ</a></li>
+        <li><a class="nav-link" id="section-nav__contacts" href="./about.html">О НАС</a></li>
+        <li><a class="nav-link" href="#">ОПЛАТА</a></li>
+        <li><a class="nav-link" href="./delivery.html">ДОСТАВКА</a></li>
+        <li><a class="nav-link" href="./contacts.html">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="main">
+      <div class="container-wrapper delivery-wrapper">
+        <div class="content-wrapper">
+          <div class="delivery-info">
+            <h1 class="delivery-title">Тарифы на доставку</h1>
+            <p class="delivery-free">Бесплатно при заказе от 2000 руб.</p>
+            <p class="delivery-paid">199 руб. при заказе до 1999 руб.</p>
+            <p class="delivery-text">Для Вашего удобства, Вы можете сохранить несколько адресов для доставки или создать
+              шаблон доставки с установленными параметрами для конкретного адреса.</p>
+          </div>
+          <div class="adress-section">
+            <div class="saved-address-section">
+              <ul class="saved-address"></ul>
+            </div>
+            <div class="new-address">
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="add-adress">Добавить адрес</button>
+          </div>
+          <label for="address-select">Выберите адрес</label>
+          <select id="address-select"></select>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="container-wrapper footer-wrapper">
+        <div class="footer-column-first">
+          <p class="footer-phone-number"><a href="tel:+7812313133">+7 (812) 313-13-3</a></p>
+          <p class="footer-slogan">Круглосуточно. В любую погоду.</p>
+        </div>
+        <div class="footer-nav">
+          <ul class="footer-nav-links">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="footer-nav-links">
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <li><a href="#">Гарантии</a></li>
+          </ul>
+          <ul class="footer-nav-links">
+            <li><a href="#">Система скидок</a></li>
+            <li><a href="#">Реферальная ссылка</a></li>
+          </ul>
+        </div>
+        <div class="footer-column-last">
+          <div class="footer-icons">
+            <div class="footer-icon">
+              <a href="#"><img src="./icons/instagram.png" class="footer-icon-logo" alt="instagram-logo"></a>
+            </div>
+            <div class="footer-icon">
+              <a href="#"><img src="./icons/vk.png" class="footer-icon-logo" alt="VK-logo"></a>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <span>© 2023</span>
+            <a href="https://github.com/Laydena">@Laydena</a>
+            <a href="https://github.com/ulmerkristina">@ulmerkristina</a>
+            <a href="https://github.com/WeronikaGRIG">@WeronikaGRIG</a>
+            <a href="https://github.com/dariaSDemidova">@dariaSDemidova</a>
+            <a href="https://github.com/AnnKlii">@AnnKlii</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main/header.js"></script>
+  <script src="./js/main/delivery.js"></script>
+</body>
+
+</html>

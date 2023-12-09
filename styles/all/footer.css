@@ -1,8 +1,8 @@
 .footer {
   padding-top: 31px;
   padding-bottom: 23px;
-  /*background-color: $footer-bg;*/
   background-color: #ECECEC;
+  /*background-color: #ECECEC;*/
   color: #292929;
   line-height: normal;
 }
@@ -72,9 +72,18 @@
   width: 100%;
 }
 
+.footer.footer-column-last {
+  display: flex;
+  justify-content: end;
+}
+
 .footer-copyright {
   font-size: 12px;
   font-weight: 400;
+}
+
+.footer-copyright a {
+  color: #292929;
 }
 
 @media screen and (max-width: 1745px) and (min-width: 360px) {
