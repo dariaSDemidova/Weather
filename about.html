@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="styles/container-wrapper/container-wrapper.css">
   <link rel="stylesheet" href="styles/all/colors.css">
   <link rel="stylesheet" href="styles/about/about.css">
+  <link rel="stylesheet" href="styles/all/">
   <link rel="stylesheet" type="text/css" href="styles/basket/basket.css">
-  <link rel="stylesheet" href="styles/modal/modal.css">
 </head>
 
 <body>
@@ -64,11 +64,11 @@
   <div class="container-wrapper">
     <nav>
       <ul class="section-nav">
-        <li><a class="nav-link" href="index.html">ГЛАВНАЯ</a></li>
-        <li><a class="nav-link" id="section-nav__contacts" href="about.html">О НАС</a></li>
+        <li><a class="nav-link" href="./index.html">ГЛАВНАЯ</a></li>
+        <li><a class="nav-link" id="section-nav__contacts" href="./about.html">О НАС</a></li>
         <li><a class="nav-link" href="#">ОПЛАТА</a></li>
-        <li><a class="nav-link" href="#">ДОСТАВКА</a></li>
-        <li><a class="nav-link" href="contacts.html">КОНТАКТЫ</a></li>
+        <li><a class="nav-link" href="./delivery.html">ДОСТАВКА</a></li>
+        <li><a class="nav-link" href="./contacts.html">КОНТАКТЫ</a></li>
       </ul>
     </nav>
   </div>
@@ -76,12 +76,10 @@
   <main>
     <div class="main">
       <div class="container-wrapper about-us-container">
-
         <div class="content-wrapper">
           <div class="about-us-img">
             <img src="./image/img/weather-image.png" alt="weather-image">
           </div>
-
           <h1 class="main-title">У природы нет плохой погоды</h1>
           <div class="text-container">
             <p>А у нас нет плохих товаров! Мы выбираем топ самых продаваемых сезонных товаров и продаём их по самой
@@ -96,90 +94,41 @@
           <div class="button-to-buy">
             <a href="!#" class="button-to-buy-link">Скорее к покупкам!</a>
           </div>
-
         </div>
-
       </div>
     </div>
   </main>
 
-  <!-- Корзина -->
-  <div class="popup">
-    <div class="popup__container" id="popup_container">
-      <div class="popup__item">
-        <h1 class="popup__title">Ваша корзина</h1>
-      </div>
-
-      <div class="popup__item" id="popup_product_list">
-
-        <div class="popup__product">
-          <div class="popup__product-wrap">
-            <img src="./images/bottle.jpg" alt="Зонтик" class="popup__product-image" />
-            <h2 class="popup__product-title">
-              Зонтик
-            </h2>
-          </div>
-
-          <div class="popup__product-wrap">
-            <div class="popup__product-price">500</div>
-            <button class="popup__product-delete">&#10006;</button>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="popup__item">
-        <div class="popup__cost">
-          <h2 class="popup__cost-title">Итого</h2>
-          <output class="popup__cost-value" id="popup_cost">0</output>
-        </div>
-
-        <button class="popul__btn card__add">Оформить заказ</button>
-
-        <button class="popup__close" id="popup_close">&#10006;</button>
-      </div>
-    </div>
-  </div>
-
   <footer class="footer">
-
     <div class="footer-container">
       <div class="container-wrapper footer-wrapper">
         <div class="footer-column-first">
           <p class="footer-phone-number"><a href="tel:+7812313133">+7 (812) 313-13-3</a></p>
           <p class="footer-slogan">Круглосуточно. В любую погоду.</p>
         </div>
-
-
         <div class="footer-nav">
           <ul class="footer-nav-links">
             <li><a href="about.html">О компании</a></li>
             <li><a href="contacts.html">Контакты</a></li>
           </ul>
-
           <ul class="footer-nav-links">
             <li><a href="delivery.html">Доставка и оплата</a></li>
             <li><a href="#">Гарантии</a></li>
           </ul>
-
           <ul class="footer-nav-links">
             <li><a href="#">Система скидок</a></li>
             <li><a href="#">Реферальная ссылка</a></li>
           </ul>
         </div>
-
-
         <div class="footer-column-last">
           <div class="footer-icons">
             <div class="footer-icon">
-              <img src="./icons/instagram.png" class="footer-icon-logo" alt="instagram-logo">
+              <a href="#"><img src="./icons/instagram.png" class="footer-icon-logo" alt="instagram-logo"></a>
             </div>
             <div class="footer-icon">
-              <img src="./icons/vk.png" class="footer-icon-logo" alt="VK-logo">
+              <a href="#"><img src="./icons/vk.png" class="footer-icon-logo" alt="VK-logo"></a>
             </div>
           </div>
-
           <div class="footer-copyright">
             <span>© 2023</span>
             <a href="https://github.com/Laydena">@Laydena</a>
@@ -188,14 +137,9 @@
             <a href="https://github.com/dariaSDemidova">@dariaSDemidova</a>
             <a href="https://github.com/AnnKlii">@AnnKlii</a>
           </div>
-
         </div>
-
-
       </div>
-
     </div>
-
   </footer>
 
   <!-- Модальные окна -->
