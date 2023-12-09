@@ -147,9 +147,18 @@
   width: 100%;
 }
 
+.footer.footer-column-last {
+  display: flex;
+  justify-content: end;
+}
+
 .footer-copyright {
   font-size: 12px;
   font-weight: 400;
+}
+
+.footer-copyright a {
+  color: #292929;
 }
 
 @media screen and (max-width: 1745px) and (min-width: 360px) {
