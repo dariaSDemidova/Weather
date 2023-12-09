@@ -1,4 +1,4 @@
-@import "colors-fonts";
+// @import "colors-fonts";
 
 .footer {
   padding-top: 31px;
@@ -20,12 +20,13 @@
   justify-content: space-between;
 }
 
-.footer-phone-number{
+.footer-phone-number {
   padding-bottom: 13px;
   font-size: 18px;
 }
 
-.footer-phone-number a, .footer-nav-links a {
+.footer-phone-number a,
+.footer-nav-links a {
   color: #292929;
   text-decoration: none;
 }
@@ -58,7 +59,7 @@
   margin-bottom: 10px;
 }
 
-.footer-icons{
+.footer-icons {
   padding-bottom: 18px;
   display: flex;
   justify-content: flex-end;
@@ -89,7 +90,8 @@
   .footer-nav {
     padding-left: 20px;
   }
-  .footer-phone-number{
+
+  .footer-phone-number {
     padding-top: 15px;
     padding-bottom: 20px;
   }
@@ -99,16 +101,18 @@
   .footer-nav {
     padding-left: 20px;
   }
-  .footer-phone-number{
+
+  .footer-phone-number {
     padding-top: 15px;
     padding-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 1350px) and (min-width: 360px) {
-  .footer-copyright{
+  .footer-copyright {
     display: none;
   }
+
   .footer-icons {
     gap: 20px;
   }
@@ -118,11 +122,13 @@
   .footer-wrapper {
     flex-wrap: wrap;
   }
+
   .footer-column-first {
     order: 1;
     width: 50%;
     justify-self: flex-start;
   }
+
   .footer-column-last {
     order: 2;
     width: 50%;
@@ -130,6 +136,7 @@
     display: flex;
     justify-content: flex-end;
   }
+
   .footer-nav {
     padding: 0;
     padding-bottom: 20px;
@@ -142,13 +149,16 @@
   .footer-slogan {
     font-size: 12px;
   }
+
   .footer-column-last {
     padding-right: 5.4em;
   }
+
   .footer-icon {
     width: 30px;
     height: 30px;
   }
+
   .footer-nav-links {
     font-size: 12px;
   }
@@ -158,17 +168,21 @@
   .footer-nav {
     display: inline-block;
   }
+
   .footer-nav-links {
     font-size: 16px;
     font-weight: 700;
   }
+
   .footer-column-first {
     padding-bottom: 20px;
     width: 100%;
   }
+
   .footer-slogan {
     font-weight: 400;
   }
+
   .footer-column-last {
     padding: 0;
     width: 100%;
