@@ -8,6 +8,7 @@
     <title>Главная</title>
     <link rel="stylesheet icon" type="image/png" href="icons/favicon.png">
     <link rel="stylesheet" type="text/css" href="styles/all/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/basket/basket.css">
     <link rel="stylesheet" type="text/css" href="styles/all/footer.css">
     <link rel="stylesheet" href="styles/all/normalize.css">
     <link rel="stylesheet" href="styles/container-wrapper/container-wrapper.css">
@@ -23,8 +24,8 @@
                     <div class="weather-block">
                         <div class="location">
                             <div class="auto-geolocation">
-                                <img class="geo-icon" alt="Определить геолокацию" title="Определить геолокацию"
-                                    src="icons/geo-icon.png">
+                                <a href="#"><img class="geo-icon" alt="Определить геолокацию"
+                                        title="Определить геолокацию" src="icons/geo-icon.png"></a>
                                 <span class="city-name"></span>
                                 <span class="city-name--error"></span>
                             </div>
@@ -46,10 +47,11 @@
                             src="icons/autorization-icon.png">
                         <span class="account">Личный кабинет</span>
                     </div>
-                    <div class="header-cart">
+                    <div class="header-cart" id="cart">
                         <a href="#"><img class="cart-icon" alt="Иконка корзины" title="Перейти в корзину"
                                 src="icons/cart-icon.png"></a>
-                        <span class="products-quantity">5 тов. на 1500 р</span>
+                        <p class="p_quantity"> <span class="products-quantity" id="cart_num">0 </span> тов. на <output
+                                class="total-price" id="cart_sum"></output></p>
                         <button class="header-btn">Оформить</button>
                     </div>
                 </div>
@@ -98,12 +100,15 @@
                         <div class="content">
                             <h3 class="item-name">Зонтик</h3>
                             <p class="item-desc">Бла-бла-бла-бла-бла-блабла-бла-бла</p>
+                            <div class="card-price"></div>
+                            <button class="buy-button">Добавить в корзину</button>
+                            
                         </div> -->
                     </div>
 
-                    <div class="card-price">
-                        <button class="buy-button" data-price="3150">Добавить в корзину</button>
-                    </div>
+                    <!-- <div class="card-price">
+                        <button class="buy-button">Добавить в корзину</button>
+                    </div> -->
                 </div>
                 <!--КОНЕЦ  1 Карточки товаров -->
 
@@ -114,12 +119,14 @@
                         <div class="content">
                             <h3 class="item-name">Зонтик</h3>
                             <p class="item-desc">Бла-бла-бла-бла-бла-блабла-бла-бла</p>
+                             <div class="card-price"></div>
+                            <button class="buy-button">Добавить в корзину</button>
                         </div> -->
                     </div>
 
-                    <div class="card-price">
-                        <button class="buy-button" data-price="3150">Добавить в корзину</button>
-                    </div>
+                    <!-- <div class="card-price">
+                        <button class="buy-button">Добавить в корзину</button>
+                    </div> -->
                 </div>
                 <!--КОНЕЦ  2 Карточки товаров -->
 
@@ -130,12 +137,14 @@
                         <div class="content">
                             <h3 class="item-name">Зонтик</h3>
                             <p class="item-desc">Бла-бла-бла-бла-бла-блабла-бла-бла</p>
+                             <div class="card-price"></div>
+                            <button class="buy-button">Добавить в корзину</button>
                         </div> -->
                     </div>
 
-                    <div class="card-price">
-                        <button class="buy-button" data-price="3150">Добавить в корзину</button>
-                    </div>
+                    <!-- <div class="card-price">
+                        <button class="buy-button">Добавить в корзину</button>
+                    </div> -->
                 </div>
                 <!--КОНЕЦ  3 Карточки товаров -->
 
@@ -146,19 +155,55 @@
                         <div class="content">
                             <h3 class="item-name">Зонтик</h3>
                             <p class="item-desc">Бла-бла-бла-бла-бла-блабла-бла-бла</p>
-                        </div> -->
-                    </div>
-
-                    <div class="card-price">
-                        <button class="buy-button" data-price="3150">Добавить в корзину</button>
+                             <div class="card-price"></div> -->
+                        <!-- <button class="buy-button">Добавить в корзину</button> -->
                     </div>
                 </div>
-                <!--КОНЕЦ  4 Карточки товаров -->
 
+                <!-- <div class="card-price">
+                    <button class="buy-button">Добавить в корзину</button>
+                </div> -->
+            </div>
+            <!--КОНЕЦ  4 Карточки товаров -->
 
+        </div>
+    </div>
 
+    <!-- Корзина -->
+    <div class="popup">
+        <div class="popup__container" id="popup_container">
+            <div class="popup__item">
+                <h1 class="popup__title">Ваша корзина</h1>
+            </div>
 
+            <div class="popup__item" id="popup_product_list">
 
+                <div class="popup__product">
+                    <div class="popup__product-wrap">
+                        <img src="./images/bottle.jpg" alt="Зонтик" class="popup__product-image" />
+                        <h2 class="popup__product-title">
+                            Зонтик
+                        </h2>
+                    </div>
+
+                    <div class="popup__product-wrap">
+                        <div class="popup__product-price">500</div>
+                        <button class="popup__product-delete">&#10006;</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="popup__item">
+                <div class="popup__cost">
+                    <h2 class="popup__cost-title">Итого</h2>
+                    <output class="popup__cost-value" id="popup_cost">0</output>
+                </div>
+
+                <button class="popul__btn card__add">Оформить заказ</button>
+
+                <button class="popup__close" id="popup_close">&#10006;</button>
             </div>
         </div>
     </div>

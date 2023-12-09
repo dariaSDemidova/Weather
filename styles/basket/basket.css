@@ -1,0 +1,129 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow-y: scroll;
+}
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1140px;
+  min-height: 300px;
+  background-color: #fff;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  position: relative;
+}
+.popup__item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+.popup__item:last-of-type {
+  border-bottom: none;
+}
+.popup__title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+.popup__product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.popup__product-wrap {
+  display: flex;
+  align-items: center;
+}
+.popup__product-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 10px;
+}
+.popup__product-title {
+  max-width: 300px;
+  font-weight: 600;
+}
+.popup__product-price {
+  font-size: 18px;
+  margin-right: 15px;
+}
+.popup__product-delete {
+  font-size: 12px;
+  border: none;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+  color: #d62240;
+}
+.popup__cost {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+.popup__cost-title {
+  margin-right: 15px;
+  font-size: 20px;
+  color: black;
+  text-align: right;
+}
+.popup__cost-value {
+  font-size: 20px;
+}
+.popup .card__add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+  font-weight: 400;
+  font-size: 17px;
+  color: white;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #E7426A;
+  background-color: #E7426A;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: auto;
+}
+.popup .card__add:hover {
+  background-color: #FF7F56;
+  border: 1px solid #FF7F56;
+  color: #fff;
+}
+.popup__close {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  padding: 20px;
+  color: rgba(54, 67, 100, 0.7);
+  font-size: 20px;
+}
+.popup__close:hover {
+  color: rgb(54, 67, 100);
+}
+.popup--open {
+  display: flex;
+}/*# sourceMappingURL=basket.css.map */

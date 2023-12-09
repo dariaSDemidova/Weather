@@ -10,6 +10,8 @@ const weatherIcon = document.querySelector('.weather-icon');
 let inputField = document.getElementById('inputcity');
 // Кнопка для ввода названия города 
 const searchBtn = document.querySelector('.search-icon');
+// Кнопка для принудительной геолокации 
+const geoBtn = document.querySelector('.geo-icon');
 
 let objAutoLocation;
 // Штуки для создания карточек
@@ -18,6 +20,7 @@ const cardOne = document.querySelector(".item-one");
 const cardTwo = document.querySelector(".item-two");
 const cardThree = document.querySelector(".item-three");
 const cardFour = document.querySelector(".item-four");
+
 
 
 // Массив с товарами, потому что локальный Джейсон подгружается только при запуске из VScode :(
@@ -359,12 +362,9 @@ function getGeoFromInput(e) {
 //Кнопка ввода города
 searchBtn.addEventListener('click', getGeoFromInput);
 
-// inputField.addEventListener('keypress', function (e) {
-//     let key = e.key;
-//     if (key === 13) { // код клавиши Enter
-//         searchBtn.click();
-//     }
-// });
+
+//Кнопка принудительной геолокации
+geoBtn.addEventListener('click', findLocation);;
 
 
 //Enter — тоже кнопка ввода города
@@ -399,8 +399,20 @@ function getElemstoCardOne(filteredItems) {
     itemdesc.classList.add("item-desc");
     itemdesc.textContent = filteredItems[0].brief;
 
-    cardOne.append(itemImage, content);
-    content.append(itemName, itemdesc)
+    //Создаю плашку с ценой
+    const itemprice = document.createElement("div");
+    itemprice.classList.add("card-price");
+    itemprice.textContent = `${filteredItems[0].price}`;
+
+    //Создаю кнопку внутри контейнера карточки
+    const itembtn = document.createElement("button");
+    itembtn.classList.add("buy-button");
+    itembtn.textContent = `Добавить в корзину`;
+
+
+    cardOne.append(itemImage, content, itembtn);
+    content.append(itemName, itemdesc, itemprice)
+
 }
 
 // Функция постройки карточки товара 2 
@@ -425,8 +437,19 @@ function getElemstoCardTwo(filteredItems) {
     itemdesc.classList.add("item-desc");
     itemdesc.textContent = filteredItems[1].brief;
 
-    cardTwo.append(itemImage, content);
-    content.append(itemName, itemdesc)
+    //Создаю плашку с ценой
+    const itemprice = document.createElement("div");
+    itemprice.classList.add("card-price");
+    itemprice.textContent = `${filteredItems[1].price}`;
+
+    //Создаю кнопку внутри контейнера карточки
+    const itembtn = document.createElement("button");
+    itembtn.classList.add("buy-button");
+    itembtn.textContent = `Добавить в корзину`;
+
+    cardTwo.append(itemImage, content, itembtn);
+    content.append(itemName, itemdesc, itemprice)
+
 }
 
 
@@ -453,8 +476,19 @@ function getElemstoCardThree(filteredItems) {
     itemdesc.classList.add("item-desc");
     itemdesc.textContent = filteredItems[2].brief;
 
-    cardThree.append(itemImage, content);
-    content.append(itemName, itemdesc)
+    //Создаю плашку с ценой
+    const itemprice = document.createElement("div");
+    itemprice.classList.add("card-price");
+    itemprice.textContent = `${filteredItems[2].price}`;
+
+    // Создаю кнопку внутри контейнера карточки
+    const itembtn = document.createElement("button");
+    itembtn.classList.add("buy-button");
+    itembtn.textContent = `Добавить в корзину`;
+
+    cardThree.append(itemImage, content, itembtn);
+    content.append(itemName, itemdesc, itemprice)
+
 }
 
 // Функция постройки карточки товара 4 
@@ -479,6 +513,203 @@ function getElemstoCardFour(filteredItems) {
     itemdesc.classList.add("item-desc");
     itemdesc.textContent = filteredItems[3].brief;
 
-    cardFour.append(itemImage, content);
-    content.append(itemName, itemdesc)
+    //Создаю плашку с ценой
+    const itemprice = document.createElement("div");
+    itemprice.classList.add("card-price");
+    itemprice.textContent = `${filteredItems[3].price}`;
+
+    // Скорее всего надо создать отдельным классом валюту или вообще ничего не создавать
+
+    // Создаю кнопку внутри контейнера карточки
+    const itembtn = document.createElement("button");
+    itembtn.classList.add("buy-button");
+    itembtn.textContent = `Добавить в корзину`;
+
+    cardFour.append(itemImage, content, itembtn);
+    content.append(itemName, itemdesc, itemprice)
 }
+
+
+// Утилиты
+
+// "Нужно для выполнения преобразования строк в числа и чисел в строки валюты соответственно.
+
+function toNum(str) {
+    const num = Number(str.replace(/ /g, ""));
+    return num;
+}
+
+// Принимает число num.
+
+function toCurrency(num) {
+    const format = new Intl.NumberFormat("ru-RU", {
+        style: "currency",
+        currency: "RUB",
+        minimumFractionDigits: 0,
+    }).format(num);
+    return format;
+}
+
+// // Корзинa
+const cardAddArr = Array.from(document.querySelectorAll(".buy-button"));
+const cartNum = document.querySelector("#cart_num");
+const cartSum = document.querySelector("#cart_sum");
+const cart = document.querySelector("#cart");
+
+// Объявление класса Cart
+// Объявление свойства products для хранения товаров в корзине.
+
+class Cart {
+    products;
+    constructor() {
+        this.products = [];
+    }
+    get count() {// Геттер (get) для получения количества товаров в корзине.
+        return this.products.length;
+    }
+    addProduct(product) {  // Метод для добавления товара в корзину.
+        this.products.push(product);
+    }
+    removeProduct(index) { // Метод для удаления товара из корзины по индексу.
+        this.products.splice(index, 1);
+    }
+    // Геттер для получения общей стоимости товаров в корзине.
+    get cost() {
+        const prices = this.products.map((product) => {
+            return toNum(product.price);
+        });
+        const sum = prices.reduce((acc, num) => {
+            return acc + num;
+        }, 0);
+        return sum;
+    }
+}
+
+// Класс для создания объекта Product на основе данных, полученных из HTML-элемента карточки товара. Содержит свойства
+class Product {
+    imageSrc; name; price;
+    constructor(card) {
+        this.imageSrc = card.querySelector(".item-img").src;
+        this.name = card.querySelector(".item-name").innerText;
+        this.price = card.querySelector(".card-price").innerText;
+    }
+}
+
+// Создание класса Cart для представления корзины.
+const myCart = new Cart();
+// Проверка наличия сохраненной корзины в  Storage.
+// Если корзины нет, создается новая корзина (myCart), и она сохраняется в Local Storage.
+if (sessionStorage.getItem("cart") == null) {
+    sessionStorage.setItem("cart", JSON.stringify(myCart));
+}
+
+// Получение сохраненной корзины из Local Storage.
+const savedCart = JSON.parse(sessionStorage.getItem("cart"));
+// Загрузка товаров из сохраненной корзины в myCart
+myCart.products = savedCart.products;
+
+// Отображение количества товаров в корзине на странице.
+cartNum.textContent = myCart.count;
+cartSum.value = toCurrency(myCart.cost);
+
+// Установка обработчика события для каждой кнопки "Добавить в корзину".
+
+myCart.products = cardAddArr.forEach((cardAdd) => {
+    cardAdd.addEventListener("click", (e) => {
+        e.preventDefault();
+        const card = e.target.closest(".wrapper-card");
+        const product = new Product(card);
+        const savedCart = JSON.parse(sessionStorage.getItem("cart"));
+
+        myCart.products = savedCart.products;
+        myCart.addProduct(product);
+        sessionStorage.setItem("cart", JSON.stringify(myCart));
+        cartNum.textContent = myCart.count;
+    });
+
+
+
+
+});
+
+// Выборка элементов из DOM:,
+const popup = document.querySelector(".popup");// Получение ссылки на элемент с классом popup.
+const popupClose = document.querySelector("#popup_close"); //  Получение ссылки на элемент с идентификатором popup_close.
+const body = document.body;// Получение ссылки на тело документа (элемент body).
+const popupContainer = document.querySelector("#popup_container"); //  Получение ссылки на элемент с идентификатором popup_container.
+const popupProductList = document.querySelector("#popup_product_list"); //  Получение ссылки на элемент с идентификатором popup_product_list.
+const popupCost = document.querySelector("#popup_cost");//  Получение ссылки на элемент с идентификатором popup_cost.
+
+
+// Добавление обработчика события при клике на элемент с идентификатором cart:
+cart.addEventListener("click", (e) => {
+    e.preventDefault();
+    popup.classList.add("popup--open");
+    body.classList.add("lock");
+    popupContainerFill();
+});
+
+// Эта функция заполняет содержимое всплывающего окна данными о товарах в корзине.
+// Наполняется список товаров, их изображения, названия, цены и кнопок удаления.
+
+function popupContainerFill() {
+
+    popupProductList.innerHTML = null;
+    const savedCart = JSON.parse(sessionStorage.getItem("cart"));
+    myCart.products = savedCart.products;
+
+    const productsHTML = myCart.products.map((product) => {
+        const productItem = document.createElement("div");
+        productItem.classList.add("popup__product");
+
+        const productWrap1 = document.createElement("div");
+        productWrap1.classList.add("popup__product-wrap");
+        const productWrap2 = document.createElement("div");
+        productWrap2.classList.add("popup__product-wrap");
+
+        const productImage = document.createElement("img");
+        productImage.classList.add("popup__product-image");
+        productImage.setAttribute("src", product.imageSrc);
+
+        const productTitle = document.createElement("h2");
+        productTitle.classList.add("popup__product-title");
+        productTitle.innerHTML = product.name;
+
+        const productPrice = document.createElement("div");
+        productPrice.classList.add("popup__product-price");
+        productPrice.innerHTML = product.price;
+
+        const productDelete = document.createElement("button");
+        productDelete.classList.add("popup__product-delete");
+        productDelete.innerHTML = "&#10006;";
+
+        productDelete.addEventListener("click", () => {
+            myCart.removeProduct(product);
+            sessionStorage.setItem("cart", JSON.stringify(myCart));
+            popupContainerFill();
+        });
+
+        productWrap1.appendChild(productImage);
+        productWrap1.appendChild(productTitle);
+        productWrap2.appendChild(productPrice);
+        productWrap2.appendChild(productDelete);
+        productItem.appendChild(productWrap1);
+        productItem.appendChild(productWrap2);
+
+        return productItem;
+    });
+
+    productsHTML.forEach((productHTML) => {
+        popupProductList.appendChild(productHTML);
+    });
+
+    popupCost.value = toCurrency(myCart.cost);
+
+}
+
+// Обработчик события для закрытия модалки
+popupClose.addEventListener("click", (e) => {
+    e.preventDefault();
+    popup.classList.remove("popup--open");
+    body.classList.remove("lock");
+});

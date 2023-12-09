@@ -13,7 +13,7 @@ const userMail = document.getElementById("user_mail");
 const userPassword = document.getElementById("user_password_reg");
 
 const userLoginMail = document.getElementById("user_login");
-const userLoginPass = document.querySelector(".login-form__input");
+const userLoginPass = document.getElementById("user_password");
 
 const accountName = document.querySelector(".account-name");
 
@@ -51,7 +51,6 @@ const modals = () => {
                 accountName.textContent = userArr[2];  //вставляем имя за модалкой
             } else {
                 alert("Данные неверны!");
-
                 document.querySelector(".loginErr").textContent = "Данные неверны!"; //если не совпадает с элементами в массиве
             }
         } else {
